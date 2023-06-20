@@ -319,4 +319,8 @@ ul li {
   #roadmap a:hover {
     color: #007700;
   }
+  .social-media .button a {
+  color: #FFFFFF !important; /* Replace with your desired color */
+}
+
   
