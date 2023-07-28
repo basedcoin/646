@@ -21,8 +21,8 @@
     </nav>
     <!-- Language switch buttons -->
     <div class="language-switch">
-      <a href="?lang=en" class="active">EN</a>
-      <a href="?lang=cn">CN</a>
+      <button onclick="switchLanguage('en')" class="active">EN</button>
+      <button onclick="switchLanguage('cn')">CN</button>
     </div>
   </header>
 
@@ -166,30 +166,28 @@
   </footer>
 
   <script>
-    // JavaScript for language switching
-    document.addEventListener("DOMContentLoaded", function () {
-      const languageSwitch = document.querySelectorAll(".language-switch a");
+    function switchLanguage(lang) {
+      const enElements = document.querySelectorAll(".lang-en");
+      const cnElements = document.querySelectorAll(".lang-cn");
 
-      function toggleLanguage(lang) {
-        const langElements = document.querySelectorAll(`.${lang}`);
-        langElements.forEach(function (element) {
-          element.style.display = lang === 'en' ? 'block' : 'none';
-        });
-
-        const otherLangElements = document.querySelectorAll(`.${lang === 'en' ? 'lang-cn' : 'lang-en'}`);
-        otherLangElements.forEach(function (element) {
-          element.style.display = lang === 'en' ? 'none' : 'block';
-        });
+      if (lang === 'en') {
+        enElements.forEach(element => element.style.display = 'block');
+        cnElements.forEach(element => element.style.display = 'none');
+      } else if (lang === 'cn') {
+        enElements.forEach(element => element.style.display = 'none');
+        cnElements.forEach(element => element.style.display = 'block');
       }
 
-      languageSwitch.forEach(function (button) {
-        button.addEventListener("click", function (event) {
-          event.preventDefault();
-          const lang = this.getAttribute("href").includes("en") ? "en" : "cn";
-          toggleLanguage(lang);
-        });
+      // Update active class for language switch buttons
+      const buttons = document.querySelectorAll('.language-switch button');
+      buttons.forEach(button => {
+        if (button.textContent.toLowerCase() === lang) {
+          button.classList.add('active');
+        } else {
+          button.classList.remove('active');
+        }
       });
-    });
+    }
   </script>
 </body>
 
