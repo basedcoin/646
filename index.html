@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pepe Fork</title>
+  <title>Pepe Fork - English</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="based.png">
 </head>
@@ -19,10 +19,14 @@
         <li><a href="#roadmap">Roadmap</a></li>
       </ul>
     </nav>
+    <!-- Language switch buttons -->
+    <div class="language-switch">
+      <a href="index_en.html" class="active">EN</a>
+      <a href="index_cn.html">CN</a>
+    </div>
   </header>
 
   <main>
-
     <h1> >$PEPEF <br> THE FIRST PEPE FORK</h1>
 
     <section id="about">
@@ -32,14 +36,11 @@
       <img src="based.png" alt="Based Meme" class="logo">
       <nav>
         <ul class="social-media">
-          <li><a href="https://t.me/pepeforketh" target="_blank" style="background-color: #YourDesiredColor; color: #000000;">Telegram</a></li>
-          <li><a href="https://twitter.com/pepeforketh" target="_blank" style="background-color: #YourDesiredColor; color: #000000;">Twitter</a></li>
-          <li><a href="https://app.uniswap.org/#/swap?outputCurrency=0x1014f52e5e33e50f0b0ac3c69cd007424f0c92b1" target="_blank" style="background-color: #YourDesiredColor; color: #000000;">BUY $PEPEF (Uniswap)</a></li>
+          <li><a href="https://t.me/pepeforketh" target="_blank">Telegram</a></li>
+          <li><a href="https://twitter.com/pepeforketh" target="_blank">Twitter</a></li>
+          <li><a href="https://app.uniswap.org/#/swap?outputCurrency=0x1014f52e5e33e50f0b0ac3c69cd007424f0c92b1" target="_blank">BUY $PEPEF (Uniswap)</a></li>
         </ul>
       </nav>
-      
-      
-
     </section>
 
     <section id="how-to-buy">
@@ -53,17 +54,14 @@
       <p>Now, switch your ETH for $PEPEF. Congratz you are gonna make it.</p>
     </section>
 
-
     <section id="tokenomics">
       <h2>Tokenomics</h2>
-
 
       <p>420,690,000,000,000 $PEPEF in circulation</p>
       <p>Locked LP</p>
       <p>Liquidity & Presale: 90%</p>
       <p>10% allocated for CEX listings, giveaways, and team incentives</p>
       <p>Team tokens will be stored in a publicly accessible ENS name for transparency.</p>
-
     </section>
 
     <section id="roadmap">
@@ -76,8 +74,6 @@
         <li>Deploy the magic code on mainnet</li>
         <li>List on Uniswap</li>
         <li>Lock the liquidity</li>
-
-
         <li>CoinGecko/Coinmarketcap Listings</li>
         <li>1,000+ Holders</li>
         <li>Get $PEPEF Trending on Twitter with our memetic power</li>
@@ -106,6 +102,21 @@
     <p>© 2023 PEPEF. All rights reserved!</p>
   </footer>
 
+  <script>
+    // JavaScript for language switching
+    document.addEventListener("DOMContentLoaded", function () {
+      const languageSwitch = document.querySelectorAll(".language-switch a");
+      languageSwitch.forEach(function (button) {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          const currentLanguage = this.classList.contains("active") ? this.getAttribute("href") : "";
+          const otherLanguage = this.classList.contains("active") ? "" : this.getAttribute("href");
+          const url = window.location.href.replace(currentLanguage, otherLanguage);
+          window.location.href = url;
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
