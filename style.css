@@ -255,13 +255,16 @@ ul li {
 }
 
 /* Additional styling */
+/* ... (rest of your CSS styles) ... */
+
+/* Social Media Buttons */
 .social-media {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.social-media a {
+  }
+  
+  .social-media a {
     display: inline-block;
     margin: 0 10px;
     padding: 10px 20px;
@@ -269,37 +272,28 @@ ul li {
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px; /* Adding border-radius to make the buttons rounded */
+    background-color: rgba(48, 190, 48, 0.2); /* Your desired color for the buttons */
     transition: background-color 0.3s ease;
-}
-
-.social-media a.telegram-button {
-    background-color: #8000ff ; /* White color for Telegram button */
-}
-
-.social-media a.twitter-button {
-    background-color: #dd299b ; /* White color for Twitter button */
-}
-
-.social-media a.buy-button {
-    background-color: #02ec86 ; /* White color for "BUY $PEPEF (Uniswap)" button */
-}
-
-.social-media a:hover {
+  }
+  
+  .social-media a:hover {
+    background-color: #007700; /* Green color on hover */
     opacity: 0.8; /* Slightly reduce opacity on hover for a visual effect */
-}
-
-/* Fix link text visibility */
-#about a,
-#how-to-buy a,
-#tokenomics a,
-#roadmap a {
+  }
+  
+  /* Fix link text visibility */
+  #about a,
+  #how-to-buy a,
+  #tokenomics a,
+  #roadmap a {
     color: #000000;
     text-decoration: underline;
-}
-
-#about a:hover,
-#how-to-buy a:hover,
-#tokenomics a:hover,
-#roadmap a:hover {
+  }
+  
+  #about a:hover,
+  #how-to-buy a:hover,
+  #tokenomics a:hover,
+  #roadmap a:hover {
     color: #007700;
-}
+  }
+  
