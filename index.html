@@ -10,67 +10,64 @@
 
   <style>
     @keyframes matrix {
-      0% {
-        content: "";
-      }
-  
-      100% {
-        content: "𝐛𝐚𝐬𝐞𝐝 𝟏𝟎𝟓𝟔𝟐𝟒𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧";
-      }
+      /* Your matrix animation keyframes here */
     }
-  
-    .matrix-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      background-image: url('wallpaperflare.com_wallpaper.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .matrix-row {
-      font-family: monospace;
-      font-size: 20px;
-      color: #00FF00;
-      animation: matrix 5s infinite;
-    }
-  
-    #about a {
-      color: #00ff00;
-      text-decoration: underline;
-    }
-  
-    #about a:hover {
-      color: #007700;
-    }
-    
+
+    /* ... (rest of your CSS styles) ... */
+
     /* Social Media Buttons */
     .social-media {
       display: flex;
       justify-content: center;
       margin-top: 20px;
     }
-    
+
     .social-media a {
       display: inline-block;
       margin: 0 10px;
       padding: 10px 20px;
-      background-color: #00ff00;
-      color: #000000;
+      color: #000000; /* Updated color to black */
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 30px; /* Adding border-radius to make the buttons rounded */
+      background-color: #ffffff; /* White background color for the buttons */
       transition: background-color 0.3s ease;
     }
-    
+
+    .social-media a.telegram-button {
+      background-color: #ffffff; /* White color for Telegram button */
+    }
+
+    .social-media a.twitter-button {
+      background-color: #ffffff; /* White color for Twitter button */
+    }
+
+    .social-media a.buy-button {
+      background-color: #ffffff; /* White color for "BUY $PEPEF (Uniswap)" button */
+    }
+
     .social-media a:hover {
-      background-color: #007700;
+      background-color: #007700; /* Green color on hover */
+      opacity: 0.8; /* Slightly reduce opacity on hover for a visual effect */
+    }
+
+    /* Fix link text visibility */
+    #about a,
+    #how-to-buy a,
+    #tokenomics a,
+    #roadmap a {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    #about a:hover,
+    #how-to-buy a:hover,
+    #tokenomics a:hover,
+    #roadmap a:hover {
+      color: #007700;
     }
   </style>
-  
+
 </head>
 
 <body>
@@ -87,23 +84,21 @@
 
   <main>
 
-    <h1> >$PEPEF <br> THE FIRST 
-       PEPE FORK</h1>
+    <h1> >$PEPEF <br> THE FIRST PEPE FORK</h1>
 
     <section id="about">
       <p>Are you tired of feeling left out, my dear Anon? Not so happy seeing your "frens" on CT effortlessly turning their 0,05 ETH into 5-10 ETH? Fear not, for you now have an absolutely fair chance of "getting in" with the illustrious $pepef</p>
       <p>$PEPEF simply pays homage to the best meme token in crypto PEPE and we also improved the tokenomics too <br> <br> >Buy / Sell %1 slippage. <br> <br> <i>Contract: 0x1014f52e5e33e50f0b0ac3c69cd007424f0c92b1</i></p>
-      
+
       <img src="based.png" alt="Based Meme" class="logo">
       <nav>
-         <ul class="social-media">
-          <li class="button"><a href="https://t.me/pepeforketh" target="_blank">Telegram</a></li>
-          <li class="button"><a href="https://twitter.com/pepeforketh" target="_blank">Twitter</a></li>
-          <li class="button"><a href="https://app.uniswap.org/#/swap?outputCurrency=0x1014f52e5e33e50f0b0ac3c69cd007424f0c92b1" target="_blank">BUY $PEPEF (Uniswap) </a></li>
-           
+        <ul class="social-media">
+          <li class="button"><a class="telegram-button" href="https://t.me/pepeforketh" target="_blank">Telegram</a></li>
+          <li class="button"><a class="twitter-button" href="https://twitter.com/pepeforketh" target="_blank">Twitter</a></li>
+          <li class="button"><a class="buy-button" href="https://app.uniswap.org/#/swap?outputCurrency=0x1014f52e5e33e50f0b0ac3c69cd007424f0c92b1" target="_blank">BUY $PEPEF (Uniswap)</a></li>
         </ul>
       </nav>
-      
+
     </section>
 
     <section id="how-to-buy">
@@ -113,26 +108,26 @@
       <p>Make sure you have some ETH in your wallet to switch to $PEPEF. If you don’t have any ETH, you can buy it directly on MetaMask, transfer from another wallet, or purchase on another exchange and send it to your wallet.</p>
       <p>3-) Go to Uniswap</p>
       <p>Connect to Uniswap by visiting app.uniswap.org on Google Chrome or using the browser within your MetaMask app. Connect your wallet and paste the $PEPEF token address into Uniswap. Select Pepef and confirm your transaction. When MetaMask prompts you for a wallet signature, sign it.</p>
-  
+
       <p>Now, switch your ETH for $PEPEF. Congratz you are gonna make it.</p>
     </section>
-    
+
 
     <section id="tokenomics">
       <h2>Tokenomics</h2>
-        
-    
+
+
       <p>420,690,000,000,000 $PEPEF in circulation</p>
       <p>Locked LP</p>
       <p>Liquidity & Presale: 90%</p>
       <p>10% allocated for CEX listings, giveaways, and team incentives</p>
       <p>Team tokens will be stored in a publicly accessible ENS name for transparency.</p>
-    
+
     </section>
 
     <section id="roadmap">
       <h2>ROADMAP</h2>
-    
+
       <p>Phase 1:</p>
       <ul>
         <li>Test magic code on the testnet</li>
@@ -141,7 +136,7 @@
         <li>List on Uniswap</li>
         <li>Lock the liquidity</li>
 
-    
+
         <li>CoinGecko/Coinmarketcap Listings</li>
         <li>1,000+ Holders</li>
         <li>Get $PEPEF Trending on Twitter with our memetic power</li>
@@ -160,17 +155,15 @@
         <li>T1 Exchange Listings - 100,000+ holders</li>
       </ul>
       <p>Join us in this epic journey of trolling, memes, and sneak our way into surpassing the $pepe.</p>
-    </section>  
+    </section>
   </main>
 
   <footer>
-    <p>This website is created with love <3  </p>
+    <p>This website is created with love <3 </p>
     <p>$PEPEF is a meme coin with no intrinsic value or expectation of financial return.</p>
     <p>team@pepefork.vip</p>
     <p>© 2023 PEPEF. All rights reserved!</p>
   </footer>
-
-  <div>
 
 </body>
 
