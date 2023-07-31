@@ -6,12 +6,12 @@
     }
 
     /* Body styles */
-    body {
-        font-family: "Comic Sans MS", cursive;
-        background-color: #ecded3;
-        color: #000000;
-        line-height: 1.6;
-    }
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #ecded3;
+    color: #000000;
+    line-height: 1.6;
+}
 
     /* Header styles */
     header {
