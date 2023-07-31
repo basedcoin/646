@@ -268,3 +268,8 @@ body {
             width: 100%;
         }
     }
+@media screen and (max-width: 600px) {
+  body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+}
