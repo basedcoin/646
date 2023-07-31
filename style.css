@@ -7,7 +7,7 @@
 
 /* Body styles */
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", cursive;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -141,7 +141,6 @@ body:before {
 
 /* Hacker theme specific styles */
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: #ecded3;
 }
 
@@ -149,36 +148,15 @@ h1,
 h2,
 h3,
 p {
-  color: #000000;
   text-shadow: none;
 }
 
 section {
-  background-color: rgba(0, 0, 0, 0.);
+  background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 1.12); /* Updated values for a moderate box shadow */
   overflow: hidden;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .logo {
@@ -230,7 +208,7 @@ footer p {
 
 /* Meme Gallery styles */
 #meme-gallery {
-  background-color: rgba(0, 0, 0, 0.);
+  background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 1.12);
@@ -266,7 +244,25 @@ footer p {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-  .meme {
-    width: 100%;
+  /* Use a sans-serif font on mobile for better readability */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Adjust font sizes for better mobile experience */
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
