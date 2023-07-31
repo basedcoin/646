@@ -5,13 +5,17 @@
     box-sizing: border-box;
 }
 
-/* Common styles for both desktop and mobile */
+/* Body styles */
 body {
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Comic Sans MS", "Arial", cursive;
     background-color: #ecded3;
     color: #000000;
     line-height: 1.6;
 }
+
+/* Rest of your CSS styles */
+/* ... */
+
 
 /* Header styles */
 header {
