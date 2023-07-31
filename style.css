@@ -268,3 +268,15 @@ footer p {
         width: 100%;
     }
 }
+/* Replace the existing font-family declarations with a font stack */
+body {
+    font-family: "Comic Sans MS", "Arial", sans-serif;
+}
+
+/* Or for more control over different elements, use specific font stacks */
+h1,
+h2,
+h3,
+p {
+    font-family: "Comic Sans MS", "Arial", sans-serif;
+}
